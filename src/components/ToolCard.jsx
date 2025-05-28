@@ -12,7 +12,14 @@ const ToolCard = ({ project }) => {
   return (
     <Card className="flex justify-between">
       <CardHeader>
-        <CardTitle>{project.title}</CardTitle>
+        <Link
+          className="flex items-center gap-1 flex-col"
+          href={project.demo}
+          target="_blank"
+        >
+          <img src={`${project.demo}/favicon.ico`} height={25} width={25} />
+          <CardTitle className="text-lg">{project.title}</CardTitle>
+        </Link>
         <CardDescription className="text-justify">
           {project.desc}
         </CardDescription>

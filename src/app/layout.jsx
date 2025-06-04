@@ -21,9 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-white`}
       >
-        <main className="flex-grow flex items-center justify-center py-6">
+        <main className="grow flex items-center justify-center py-6">
           {children}
         </main>
         <Footer />
